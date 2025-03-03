@@ -1,0 +1,297 @@
+/* 
+-----------------------------
+General
+----------------------------- 
+*/
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;;
+    color: #5a5a5a;
+    font-family: 'Aptos', sans-serif;
+}
+
+.content{
+    font-size: 14px;
+}
+
+main{
+    width: 40%;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: #755B76;
+    width: 40%;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+main, footer, .bottom-bar{
+    padding: 5px;
+}
+
+
+/* 
+-----------------------------
+Header
+----------------------------- 
+*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    width: 40%;
+    padding: 0 10px;
+}
+
+#left-side {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+}
+
+#right-side {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-container {
+    background-color: #755B76;
+    color: white;
+    width: 170px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+#links {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+#picture img {
+    height: 100%; 
+    width: auto;
+    border: 3px solid #755B76;
+    border-radius: 5px;
+}
+
+#links a{
+    text-decoration: none;
+    color: #5a5a5a
+}
+
+#links span:hover {
+    text-decoration: underline;
+}
+
+#links a::before {
+    content: '→'; 
+    margin-right: 5px; 
+    font-size: 16px;
+    color: #755B76;
+}
+
+#middle-bar{
+    background-color: #755B76;
+    height: 3px;
+    width: 40%;
+    margin-top: 10px;
+}
+
+
+/* 
+-----------------------------
+Kommentarer
+----------------------------- 
+*/
+
+.comment-section{
+    font-size: 12px;
+    padding: 15px;
+}
+
+.comment-name{
+    font-weight: bold;
+}
+
+.comment-divider{
+    background-color: #755B76;
+    height: 2px;
+    margin-top: 30px; 
+    margin-bottom: 5px;   
+}
+
+.comment-text{
+    height: 100px;
+    resize:vertical;
+    margin-bottom: 10px;
+}
+
+.comment-section, .newComment {
+    display: none;
+}
+
+
+/* 
+-----------------------------
+Headline till Nytt inlägg
+----------------------------- 
+*/
+
+#headline-post{
+    width: 40%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#headline-post h1{
+    font-size: 25px; 
+    color: #5a5a5a;    
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* 
+-----------------------------
+Input-fält
+----------------------------- 
+*/
+
+input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#text {
+    width: 300px; 
+    height: 100px;
+    padding: 5px;
+}
+
+form {
+    display: block;
+    max-width: 40%;
+    width: 100%;
+    margin: 0;
+}
+
+
+textarea {
+    width: 100%;
+    height: 300px;
+    display:block;
+    margin-bottom:10px;
+}
+
+
+/* 
+-----------------------------
+Bottom bar
+----------------------------- 
+*/
+
+.bottom-bar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Aptos', sans-serif;
+    font-size: 13px;
+    background-color: #755B76;
+}
+
+.to-comment, .comments {
+    color: white;
+    margin-right: 20px;
+}
+
+.delete{
+    margin-left: auto;
+    color: white;
+}
+
+.to-comment:hover, .comments:hover, .delete:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* 
+-----------------------------
+Mindre skärmar
+----------------------------- 
+*/
+
+/* Mellansteg */
+@media (max-width: 1400px) {
+
+    main, footer, header, #middle-bar, #headline-post{
+        width: 60%;
+    }
+
+    form{
+        max-width: 60%;
+    }
+
+  }
+
+
+
+/* Ännu mindre skärmar
+Headern blir flex istället för grid */
+
+  @media (max-width: 560px) {
+    main, footer, header, #middle-bar, #headline-post{
+        width: 80%;
+    }
+
+    form{
+        max-width: 80%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column; 
+        height: auto;
+        padding: 10px;
+    }
+    
+    #left-side {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+    }
+    
+    #header-container {
+        text-align: center;
+    }
+    
+    #links {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    #picture img {
+        height: auto; 
+        max-width: 100%;
+    }
+
+
+  }
+
+  @media (max-width: 500px) {
+
+  }

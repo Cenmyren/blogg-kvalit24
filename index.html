@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="left-side">
+            <div id="header-container">
+                this is a blog
+            </div>
+            <div id="links">
+                <span><a href="#main">Senaste inläggen</a></span>
+                <span><a href="#headline-post">Gör nytt inlägg</a></span>
+            </div>
+     </div>
+
+     <div id="right-side">
+        <div id="picture">
+            <img src="bilder/softsummer4.png" alt="header-bild">
+        </div>
+    </div>
+    </header>
+
+    <div id="middle-bar"></div>
+
+    <main id="main">
+        <article>
+            <h1 class="rubrik">Det här är post 1</h1>
+            <p class ="author">Författare: Linn</p>
+            <p class="date">Publicerat: 2025-02-24</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dicta obcaecati veritatis culpa blanditiis, neque necessitatibus voluptatem eligendi, recusandae, aperiam modi molestiae tempore atque harum ut soluta est cupiditate illo?</p>
+            <p class="bottom-bar">
+                <span class="comments">Se kommentarer</span>
+                <span class="to-comment">Kommentera</span>
+                <span class="delete">Ta bort inlägg</span>
+            </p>
+
+            <!-- comment section -->
+            <div class="comment-section">
+                <div class="each-comment">
+                    <p class="comment-name">Ewa</p>
+                    <p class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dicta obcaecati veritatis culpa blanditiis</p>
+                </div>
+
+                <div class="each-comment">
+                    <p class="comment-name">Linn</p>
+                    <p class="comment-content">Det här är en kommentar</p>
+                </div>
+
+                <div class="comment-divider"></div>
+            </div>
+
+            <!-- add comments to post -->
+            <form class="newComment">
+                <label for="comment-name">Namn:</label>
+                <input type="text" class="comment-name" />
+                <label for="comment-text">Kommentar:</label>
+                <textarea class="comment-text"></textarea>
+                <button type="submit" class="submit-comment">Skicka Kommentar</button>
+            </form>
+
+        </article>
+
+        <article>
+            <h1 class="rubrik">Det här är post 2</h1>
+            <p class ="author">Författare: Linn</p>
+            <p class="date">Publicerat: 2025-02-22</p>
+            <p class="content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p class="bottom-bar">
+                <span class="comments">Se kommentarer</span>
+                <span class="to-comment">Kommentera</span>
+                <span class="delete">Ta bort inlägg</span>
+            </p>
+
+            <!-- comment section -->
+            <div class="comment-section" style="display: none;">
+            </div>
+
+            <!-- add comments to post -->
+            <form class="newComment" style="display: none;">
+                <label for="comment-name">Namn:</label>
+                <input type="text" class="comment-name"/>
+                <label for="comment-text">Kommentar:</label>
+                <textarea class="comment-text"></textarea>
+                <button type="submit" class="submit-comment">Skicka Kommentar</button>
+            </form>
+        </article>
+    </main>
+
+    <div id="headline-post">
+        <h1>Nytt inlägg</h1>
+    </div>
+
+    <form id="post">
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel">
+
+        <label for="namn">Namn:</label>
+        <input type="text" id="namn">
+        
+        <label for="text">Text:</label>
+        <textarea id="text" rows="10"></textarea>
+    
+        <button type="submit">Skicka</button>
+
+    </form>
+
+
+
+
+    <footer>Caroline Enmyren &copy; 2025</footer>
+    
+</body>
+</html>
